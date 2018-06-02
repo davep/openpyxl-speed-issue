@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+
+# Import from openpyxl
+from openpyxl import load_workbook
+
+# Load up the workbook.
+wb = load_workbook( "Test.xlsx", read_only=True )
+
+# Doing this 1000 times...
+for n in range( 1000 ):
+    # For each row in the test sheet...
+    for row in wb[ "Test Sheet" ].rows:
+        # For each cell in the current row...
+        for cell in row:
+            # Do nothing useful with the value in there.
+            value = cell.value
+
+### read-using-generators ends here
