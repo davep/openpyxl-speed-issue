@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+
+# Import from openpyxl
+from openpyxl import load_workbook
+
+# Load up the workbook.
+wb = load_workbook( "Test.xlsx", read_only=True )
+
+# Pull out the sheet we're interested in.
+sheet = wb[ "Test Sheet" ]
+
+# Repeat the test...
+for n in range( 20 ):
+    # For each row in the sheet...
+    for row in range( 1, sheet.max_row + 1 ):
+        # For each column in the sheet...
+        for col in range( 0, sheet.max_column ):
+            # Do noting useful with the value in there.
+            value = sheet[ row ][ col ].value
+
+### read-using-peeking ends here
