@@ -5,6 +5,10 @@ an issue I ran into with [openpyxl](https://openpyxl.readthedocs.io/). This
 isn't written to show that there's a problem *with* openpyxl, just to show
 an issue I ran into and why it's an issue.
 
+Please see [the blog post that goes with this
+repository](https://blog.davep.org/2018/06/02/a_little_speed_issue_with_openpyxl.html)
+for a bit more background.
+
 # Using this repository
 
 This repository is designed to be used on a system that has
