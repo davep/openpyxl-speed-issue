@@ -12,8 +12,8 @@ This repository is designed to be used on a system that has
 also included so things that be easily set up and run via `make`. Commands
 include:
 
-- `make setup`
+- `make setup`  
 Ensures pipenv is set up and the required virtual environment is installed.
-- `make test`
+- `make test`  
 Runs the tests.
 
